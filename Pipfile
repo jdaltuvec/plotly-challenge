@@ -6,7 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pymysql = "*"
+os = "*"
+pandas = "*"
+numpy = "*"
+sqlalchemy = "*"
+flask = "*"
+flask-sqlalchemy = "*"
 
 [requires]
 python_version = "3.7"
