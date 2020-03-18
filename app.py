@@ -37,6 +37,10 @@ Samples_Metadata = Base.classes.sample_metadata
 Samples = Base.classes.samples
 
 
+@app.before_first_request
+def setup():
+    db.create_all()
+
 @app.route("/")
 def index():
     """Return the homepage."""
